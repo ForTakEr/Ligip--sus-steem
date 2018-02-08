@@ -15,10 +15,5 @@ namespace Ligipääsusüsteem
         {
             Toas = new Peauks();
         }
-
-        public void Juurdepääs(Tuba tuba)
-        {
-
-        }
     }
 }

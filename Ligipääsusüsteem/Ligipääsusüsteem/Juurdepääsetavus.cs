@@ -9,14 +9,18 @@ namespace Ligipääsusüsteem
     abstract class Juurdepääsetavus : Tuba
     {
         public List<Töötajad> TööJuurdepääs;
-        public abstract void intTööJuurdepääs();
+
+        public abstract void IntTööJuurdepääs();
 
         public Ligipääsusüsteem()
         {
             TööJuurdepääs = new List<Töötajad>();
-            intTööJuurdepääs();
+            IntTööJuurdepääs();
         }
 
-        public virtual bool JuurdepääsO(Töötajad )
+        public virtual bool JuurdepääsO(Töötajad)
+        {
+            return true;
+        }
     }
 }
