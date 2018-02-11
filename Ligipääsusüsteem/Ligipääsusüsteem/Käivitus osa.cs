@@ -8,7 +8,7 @@ namespace Ligipääsusüsteem
 {
     class Käivitus_osa
     {
-        List<Tuba> Toad;
+        List<Juurdepääsetavus> Toad;
         List<Töötajad> Tööd;
         Kasutaja Kasutaja;
 
@@ -21,7 +21,7 @@ namespace Ligipääsusüsteem
 
         void OlemasToad()
         {
-            Toad = new List<Tuba>()
+            Toad = new List<Juurdepääsetavus>()
             {
                 new Peauks(),
                 new Arendajate_ruum(),
@@ -88,7 +88,7 @@ namespace Ligipääsusüsteem
             while (true)
             {
                 int Sisend;
-
+                Console.Clear();
                 Console.WriteLine("Teie pragune amet on: " + Kasutaja.Amet.Nimi);
                 Console.WriteLine("Te asute hetkel: " + Kasutaja.Toas.ToaNimi);
                 Console.WriteLine();

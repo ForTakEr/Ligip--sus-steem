@@ -18,11 +18,11 @@ namespace Ligipääsusüsteem
             IntTööJuurdepääs();
         }
 
-        public virtual bool JuurdepääsO(Töötajad amet)
+        public virtual bool JuurdepääsO(Töötajad ametK)
         {
             foreach (Töötajad töötaja in TööJuurdepääs)
             {
-                if (amet.Nimi == töötaja.Nimi)
+                if (ametK.Nimi == töötaja.Nimi)
                 {
                     return true;
                 }
