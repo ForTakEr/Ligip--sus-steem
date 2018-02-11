@@ -10,7 +10,7 @@ namespace Ligipääsusüsteem
     {
         public string ToaNimi;
 
-        public void pTuba(int count)
+        public void PTuba(int count)
         {
             count++;
             Console.WriteLine(count + ". " + ToaNimi);

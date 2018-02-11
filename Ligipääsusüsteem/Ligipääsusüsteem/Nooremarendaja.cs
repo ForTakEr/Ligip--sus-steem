@@ -12,5 +12,5 @@ namespace Ligipääsusüsteem
         {
             Nimi = "Nooremarendaja";
         }
-    }
+    }               
 }

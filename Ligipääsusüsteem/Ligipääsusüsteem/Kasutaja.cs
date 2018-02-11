@@ -16,11 +16,11 @@ namespace Ligipääsusüsteem
             Toas = new Peauks();
         }
 
-        public void MineTuppa(Juurdepääsetavus tuba)
+        public void MineTuppa(Juurdepääsetavus juurdepääsetavus)
         {
-            if (tuba.JuurdepääsO(Amet))
+            if (juurdepääsetavus.JuurdepääsO(Amet))
             {
-                Toas = tuba;
+                Toas = juurdepääsetavus;
             }
             else
             {

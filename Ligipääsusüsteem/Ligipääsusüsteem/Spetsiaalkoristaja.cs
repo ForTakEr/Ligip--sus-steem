@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ligipääsusüsteem
 {
-    class Spetsiaalkoristaja : Koristaja
+    class Spetsiaalkoristaja : Töötajad
     {
         public Spetsiaalkoristaja()
         {

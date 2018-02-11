@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ligipääsusüsteem
 {
-    class Vanemarendajad : Nooremarendaja
+    class Vanemarendajad : Töötajad
     {
         public Vanemarendajad()
         {

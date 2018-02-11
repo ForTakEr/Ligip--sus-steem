@@ -6,12 +6,21 @@ using System.Threading.Tasks;
 
 namespace Ligipääsusüsteem
 {
-    class Köök : Tuba
+    class Köök : Juurdepääsetavus
     {
         public Köök()
         {
             ToaNimi = "Köök";
-            //Juurdepääs = 1;
+        }
+
+        public override void IntTööJuurdepääs()
+        {
+            TööJuurdepääs.Add(new Nooremarendaja());
+            TööJuurdepääs.Add(new Ülemused());
+            TööJuurdepääs.Add(new Vanemarendajad());
+            TööJuurdepääs.Add(new Spetsiaalkoristaja());
+            TööJuurdepääs.Add(new Koristaja());
+            TööJuurdepääs.Add(new Andmetöötlejad());
         }
     }
 }

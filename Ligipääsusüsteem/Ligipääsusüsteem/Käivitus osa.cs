@@ -70,9 +70,9 @@ namespace Ligipääsusüsteem
 
                 Console.Clear();
 
-                if (Sisend > 0 && Sisend < Tööd.Count)
+                if (Sisend > 0 && Sisend <= Tööd.Count)
                 {
-                    Kasutaja.Amet = Tööd[Sisend];
+                    Kasutaja.Amet = Tööd[Sisend - 1];
                     return;
                 }
                 else
@@ -89,13 +89,19 @@ namespace Ligipääsusüsteem
             {
                 int Sisend;
 
+                Console.WriteLine("Teie pragune amet on: " + Kasutaja.Amet.Nimi);
+                Console.WriteLine("Te asute hetkel: " + Kasutaja.Toas.ToaNimi);
+                Console.WriteLine();
+
                 Console.WriteLine("Mis tuppa soovite minna?");
                 Console.WriteLine();
 
                 for (int i = 0; i < Toad.Count; i++)
                 {
-                    Toad[i].pTuba(i);
+                    Toad[i].PTuba(i);
                 }
+
+                Console.WriteLine((Toad.Count + 1) + ". Programmist väljumine");
 
                 try
                 {
@@ -109,19 +115,21 @@ namespace Ligipääsusüsteem
 
                 Console.Clear();
 
-                if (Sisend > 0 && Sisend < Toad.Count)
+                if (Sisend > 0 && Sisend <= Toad.Count)
                 {
-                    Kasutaja.Toas = Toad[Sisend];
-                    return;
+                    Kasutaja.MineTuppa(Toad[Sisend - 1]);
+                }
+                if (Sisend == 6)
+                {
+                    Environment.Exit(0);
                 }
                 else
                 {
                     Console.WriteLine("Number pole õiges vahemikus");
                 }
-
             }
         }
-        public void Käima()
+        public void Käivitu()
         {
             HetkeTöö();
             HetkeTuba();

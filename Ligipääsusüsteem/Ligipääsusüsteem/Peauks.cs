@@ -6,12 +6,21 @@ using System.Threading.Tasks;
 
 namespace Ligipääsusüsteem
 {
-    class Peauks : Tuba
+    class Peauks : Juurdepääsetavus
     {
         public Peauks()
         {
             ToaNimi = "Peauks";
-            //Juurdepääs = 1;
+        }
+
+        public override void IntTööJuurdepääs()
+        {
+            TööJuurdepääs.Add(new Nooremarendaja());
+            TööJuurdepääs.Add(new Ülemused());
+            TööJuurdepääs.Add(new Vanemarendajad());
+            TööJuurdepääs.Add(new Spetsiaalkoristaja());
+            TööJuurdepääs.Add(new Koristaja());
+            TööJuurdepääs.Add(new Andmetöötlejad());
         }
     }
 }

@@ -6,12 +6,20 @@ using System.Threading.Tasks;
 
 namespace Ligipääsusüsteem
 {
-    class Arendajate_ruum : Tuba
+    class Arendajate_ruum : Juurdepääsetavus
     {
         public Arendajate_ruum()
         {
             ToaNimi = "Arendajate ruum";
-            //Juurdepääs = 2;
+        }
+
+        public override void IntTööJuurdepääs()
+        {
+            TööJuurdepääs.Add(new Nooremarendaja());
+            TööJuurdepääs.Add(new Ülemused());
+            TööJuurdepääs.Add(new Vanemarendajad());
+            TööJuurdepääs.Add(new Spetsiaalkoristaja());
+            TööJuurdepääs.Add(new Koristaja());
         }
     }
 }

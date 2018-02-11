@@ -6,12 +6,19 @@ using System.Threading.Tasks;
 
 namespace Ligipääsusüsteem
 {
-    class Andmetöötlejate_ruum : Tuba
+    class Andmetöötlejate_ruum : Juurdepääsetavus
     {
         public Andmetöötlejate_ruum()
         {
             ToaNimi = "Andmetöötlejate ruum";
-            //Juurdepääs = 3;
+        }
+
+        public override void IntTööJuurdepääs()
+        {
+            TööJuurdepääs.Add(new Andmetöötlejad());
+            TööJuurdepääs.Add(new Ülemused());
+            TööJuurdepääs.Add(new Vanemarendajad());
+            TööJuurdepääs.Add(new Spetsiaalkoristaja());
         }
     }
 }

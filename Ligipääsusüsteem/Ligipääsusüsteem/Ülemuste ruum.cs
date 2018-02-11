@@ -6,12 +6,18 @@ using System.Threading.Tasks;
 
 namespace Ligipääsusüsteem
 {
-    class Ülemuste_ruum : Tuba
+    class Ülemuste_ruum : Juurdepääsetavus
     {
         public Ülemuste_ruum()
         {
             ToaNimi = "Ülemuste ruum";
-            //Juurdepääs = 4;
+        }
+
+        public override void IntTööJuurdepääs()
+        {
+            TööJuurdepääs.Add(new Ülemused());
+            TööJuurdepääs.Add(new Vanemarendajad());
+            TööJuurdepääs.Add(new Spetsiaalkoristaja());
         }
     }
 }

@@ -27,7 +27,6 @@ namespace Ligipääsusüsteem
                     return true;
                 }
             }
-
             return false;
         }
     }

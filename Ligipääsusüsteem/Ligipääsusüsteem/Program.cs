@@ -10,9 +10,8 @@ namespace Ligipääsusüsteem
     {
         static void Main(string[] args)
         {
-            Console.OutputEncoding = Encoding.UTF8;
             Käivitus_osa käivitus = new Käivitus_osa();
-            käivitus.Käima();
+            käivitus.Käivitu();
         }
     }
 }
