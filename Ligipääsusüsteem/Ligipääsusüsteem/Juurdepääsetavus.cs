@@ -12,15 +12,23 @@ namespace Ligipääsusüsteem
 
         public abstract void IntTööJuurdepääs();
 
-        public Ligipääsusüsteem()
+        public Juurdepääsetavus()
         {
             TööJuurdepääs = new List<Töötajad>();
             IntTööJuurdepääs();
         }
 
-        public virtual bool JuurdepääsO(Töötajad)
+        public virtual bool JuurdepääsO(Töötajad amet)
         {
-            return true;
+            foreach (Töötajad töötaja in TööJuurdepääs)
+            {
+                if (amet.Nimi == töötaja.Nimi)
+                {
+                    return true;
+                }
+            }
+
+            return false;
         }
     }
 }

@@ -8,7 +8,7 @@ namespace Ligipääsusüsteem
 {
     class Töötajad
     {
-        protected string Nimi;
+        public string Nimi;
 
         public void pNimi(int count)
         {

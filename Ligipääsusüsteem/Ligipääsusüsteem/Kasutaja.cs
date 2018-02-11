@@ -15,5 +15,18 @@ namespace Ligipääsusüsteem
         {
             Toas = new Peauks();
         }
+
+        public void MineTuppa(Juurdepääsetavus tuba)
+        {
+            if (tuba.JuurdepääsO(Amet))
+            {
+                Toas = tuba;
+            }
+            else
+            {
+                Console.WriteLine("Teil pole piisavalt kõrge amet, et siia siseneda");
+                Console.WriteLine();
+            }
+        }
     }
 }
